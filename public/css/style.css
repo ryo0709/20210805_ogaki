@@ -1,4 +1,4 @@
-  .todo-list {
+.todo-list {
     margin: 0;
     padding: 0;
     border: 0;
@@ -6,15 +6,15 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-  }
+}
 
-  .todo-create {
+.todo-create {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-  }
+}
 
-  .input-todo-create {
+.input-todo-create {
     width: 80%;
     padding: 5px;
     border-radius: 5px;
@@ -22,9 +22,9 @@
     appearance: none;
     font-size: 14px;
     outline: none;
-  }
+}
 
-  .btn-todo-create {
+.btn-todo-create {
     text-align: left;
     border: 2px solid #dc70fa;
     font-size: 12px;
@@ -34,16 +34,15 @@
     padding: 8px 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.4s;
     outline: none;
-  }
+}
 
-  .btn-todo-create:hover {
+.btn-todo-create:hover {
     color: white;
     background-color: #dc70fa;
-  }
-
-  .input-todo-update {
+    transition: 0.4s;
+}
+.input-todo-update {
     width: 90%;
     padding: 5px;
     border-radius: 5px;
@@ -51,9 +50,9 @@
     appearance: none;
     font-size: 14px;
     outline: none;
-  }
+}
 
-  .btn-todo-update {
+.btn-todo-update {
     text-align: left;
     border: 2px solid #fa9770;
     font-size: 12px;
@@ -63,16 +62,15 @@
     padding: 8px 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.4s;
     outline: none;
-  }
+}
 
-  .btn-todo-update:hover {
+.btn-todo-update:hover {
     color: white;
     background-color: #fa9770;
-  }
-
-  .btn-todo-delete {
+    transition: 0.4s;
+}
+.btn-todo-delete {
     text-align: left;
     border: 2px solid #71fadc;
     font-size: 12px;
@@ -82,32 +80,32 @@
     padding: 8px 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.4s;
-    outline: none;
-  }
 
-  .btn-todo-delete:hover {
+    outline: none;
+}
+
+.btn-todo-delete:hover {
     color: white;
     background-color: #71fadc;
-  }
+    transition: 0.4s;
+}
 
-  table {
+table {
     margin: 0 auto;
     text-align: center;
     width: 100%;
-  }
+}
 
-  th {
+th {
     color: black;
     vertical-align: baseline;
-  }
+}
 
-  tr {
+tr {
     vertical-align: baseline;
     height: 50px;
-  }
-  
-  td {
+}
+
+td {
     text-align: center;
-  }
-  
+}

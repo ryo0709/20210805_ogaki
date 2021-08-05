@@ -44,7 +44,7 @@
         </td>
         </form>
         <td>
-          <form action={{ "/update",$todo->id }} method="POST">
+          <form action="/update/{{ $todo->id }}" method="POST">
             <input type="text" name="content" value="{{$todo->content}}" class="input-todo-update">
         </td>
         <td>
@@ -52,7 +52,7 @@
           <button type="submit" class="btn-todo-update">更新</button>
           </form>
         </td>
-        <form action={{ "/delete",$todo->id }}method="POST">
+        <form action="/delete/{{ $todo->id }}" method="POST">
           <td>
             @csrf
             <input type="submit" name="content" value="削除" class="btn-todo-delete">

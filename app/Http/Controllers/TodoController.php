@@ -23,22 +23,19 @@ class TodoController extends Controller
         Todo::create($form);
         return redirect('/');
     }
-    public function update(Request $request,)
+    public function update(Request $request)
     {
         $request->validate([
             'content' => 'required|max:20'
         ]);
         $form = $request->all();
         unset($form['_token']);
-        Todo::where('id', $request->id)->update($form);
+        Todo::find($request->id)->update($form);
         return redirect('/');
     }
     public function delete(Request $request)
     {
-        $form = $request->all();
-        unset($form['_token']);
         Todo::find($request->id)->delete();
-        // $todo = Todo::destory($id);
         return redirect('/');
     }
 }

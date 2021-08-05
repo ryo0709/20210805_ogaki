@@ -35,7 +35,10 @@ class TodoController extends Controller
     }
     public function delete(Request $request)
     {
-        Todo::find($request->content)->delete();
+        $form = $request->all();
+        unset($form['_token']);
+        Todo::find($request->id)->delete();
+        // $todo = Todo::destory($id);
         return redirect('/');
     }
 }
